@@ -46,7 +46,7 @@ function PostSection() {
       <div className="card-header">React Axios POST</div>
       <div className="card-body">
         <div className="form-group">
-          <input
+          <input data-testid="input-title"
             type="text"
             className="form-control"
             onChange={(e) => setTitle(e.target.value)}
@@ -54,14 +54,14 @@ function PostSection() {
           />
         </div>
         <div className="form-group">
-          <input
+          <input data-testid="input-description"
             type="text"
             className="form-control"
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Description"
           />
         </div>
-        <button className="btn btn-sm btn-primary" onClick={postData}>
+        <button data-testid="post-data-button" className="btn btn-sm btn-primary" onClick={postData}>
           Post Data
         </button>
         <button
